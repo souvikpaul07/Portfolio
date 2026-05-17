@@ -25,3 +25,6 @@ jobs:
 
       - name: Build project
         run: npm run build
+
+      - name: Build Docker image
+        run: docker build -t portfolio .
