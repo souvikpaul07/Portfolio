@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "Souvik Paul - Portfolio",
   description:
     "Project Engineer specializing in Java Backend Development, Spring Boot, and Microservices.",
+  icons: {
+    icon: "/sp-logo.svg",
+  },
 };
 
 export default function RootLayout({
