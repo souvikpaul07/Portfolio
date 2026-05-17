@@ -183,9 +183,4 @@ function WiproLogo() {
   );
 }
 
-// MicrosoftLogo function removed - not used in component
-//       <div className="bg-[#00a4ef]" />
-//       <div className="bg-[#ffb900]" />
-//     </motion.div>
-//   );
-// }
+
