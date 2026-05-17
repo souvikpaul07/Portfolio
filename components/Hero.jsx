@@ -183,18 +183,9 @@ function WiproLogo() {
   );
 }
 
-function MicrosoftLogo() {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.35 }}
-      className="grid grid-cols-2 gap-0.5 w-8 h-8 shrink-0"
-    >
-      <div className="bg-[#f25022]" />
-      <div className="bg-[#7fba00]" />
-      <div className="bg-[#00a4ef]" />
-      <div className="bg-[#ffb900]" />
-    </motion.div>
-  );
-}
+// MicrosoftLogo function removed - not used in component
+//       <div className="bg-[#00a4ef]" />
+//       <div className="bg-[#ffb900]" />
+//     </motion.div>
+//   );
+// }
