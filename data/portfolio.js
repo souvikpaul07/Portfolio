@@ -26,14 +26,17 @@ export const navLinks = [
 ];
 
 export const techTags = [
-  ".NET",
+  "Java",
+  "Spring Boot",
+  "Microservices",
   "React.js",
-  "Azure",
-  "C#",
-  "SharePoint",
-  "Node.js",
-  "AI / ML",
-  "WebRTC",
+  "MySQL",
+  "DBeaver",
+  "Git",
+  "Docker",
+  "Linux",
+  "AWS",
+  "AI Tools",
 ];
 
 export const stats = [
