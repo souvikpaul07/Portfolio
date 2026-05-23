@@ -33,6 +33,11 @@ export const techTags = [
   "MySQL",
   "DBeaver",
   "Git",
+  "GitLabs",
+  "Jenkins",
+  "Fortify",
+  "Postman",
+  "BlackDuck",
   "Docker",
   "Linux",
   "AWS",
@@ -142,6 +147,11 @@ export const skillCategories = [
     icon: "sparkles",
   skills: [
     "GitHub Copilot",
+    "GitLabs",
+    "Jenkins",
+    "Fortify",
+    "Postman",
+    "BlackDuck",
     "ChatGPT",
     "OpenAI API",
     "LangChain",
@@ -177,7 +187,7 @@ export const experience = [
     "Collaborated with cross-functional teams to identify performance bottlenecks and implement improvements in deployment workflows",
     "Strengthened CI/CD processes by integrating container best practices and improving build reliability"
   ],
-  tech: ["Java", "Spring Boot", "Docker", "Microservices", "CI/CD", "Linux", "Git"]
+  tech: ["Java", "Spring Boot", "Docker", "Microservices", "CI/CD", "Linux", "Git", "GitLabs","Jenkins","Fortify","Postman","BlackDuck",]
 },
 ];
 
