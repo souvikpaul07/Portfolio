@@ -203,7 +203,7 @@ export default function Chatbot() {
   };
 
   // Hydration pattern for Next.js - safe to suppress this rule
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+  // eslint-disable-next-line react-hooks/set-state-in-effect
   useLayoutEffect(() => {
     setMounted(true);
   }, []);
