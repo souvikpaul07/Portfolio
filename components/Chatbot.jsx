@@ -202,6 +202,8 @@ export default function Chatbot() {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  // Hydration pattern for Next.js - safe to suppress this rule
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   useLayoutEffect(() => {
     setMounted(true);
   }, []);
