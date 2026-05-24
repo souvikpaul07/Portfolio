@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useLayoutEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import ReactMarkdown from 'react-markdown';
@@ -202,10 +202,8 @@ export default function Chatbot() {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setMounted(true);
-    return undefined;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -404,16 +402,16 @@ export default function Chatbot() {
                       <div className="text-sm prose prose-sm dark:prose-invert max-w-none">
                         <ReactMarkdown
                           components={{
-                            h1: ({ _node, ...props }) => <h1 className="text-lg font-bold mt-2 mb-1" {...props} />,
-                            h2: ({ _node, ...props }) => <h2 className="text-base font-bold mt-2 mb-1" {...props} />,
-                            h3: ({ _node, ...props }) => <h3 className="text-sm font-bold mt-1 mb-0.5" {...props} />,
-                            strong: ({ _node, ...props }) => <strong className="font-bold" {...props} />,
-                            em: ({ _node, ...props }) => <em className="italic" {...props} />,
-                            ul: ({ _node, ...props }) => <ul className="list-disc list-inside ml-2" {...props} />,
-                            ol: ({ _node, ...props }) => <ol className="list-decimal list-inside ml-2" {...props} />,
-                            li: ({ _node, ...props }) => <li className="mb-0.5" {...props} />,
-                            code: ({ _node, ...props }) => <code className="bg-gray-200 dark:bg-gray-700 px-1 py-0.5 rounded text-xs" {...props} />,
-                            blockquote: ({ _node, ...props }) => <blockquote className="border-l-4 border-purple-500 pl-3 italic" {...props} />,
+                            h1: (props) => <h1 className="text-lg font-bold mt-2 mb-1" {...props} />,
+                            h2: (props) => <h2 className="text-base font-bold mt-2 mb-1" {...props} />,
+                            h3: (props) => <h3 className="text-sm font-bold mt-1 mb-0.5" {...props} />,
+                            strong: (props) => <strong className="font-bold" {...props} />,
+                            em: (props) => <em className="italic" {...props} />,
+                            ul: (props) => <ul className="list-disc list-inside ml-2" {...props} />,
+                            ol: (props) => <ol className="list-decimal list-inside ml-2" {...props} />,
+                            li: (props) => <li className="mb-0.5" {...props} />,
+                            code: (props) => <code className="bg-gray-200 dark:bg-gray-700 px-1 py-0.5 rounded text-xs" {...props} />,
+                            blockquote: (props) => <blockquote className="border-l-4 border-purple-500 pl-3 italic" {...props} />,
                           }}
                         >
                           {message.content}
