@@ -1,9 +1,9 @@
 # Personal Portfolio
 
-A modern developer portfolio built with **Next.js**, showcasing my experience in backend development, microservices architecture, and application modernization.
+A modern developer portfolio, showcasing my experience in backend development, microservices architecture, and application modernization.
 
 ## 🔗 Live Demo
-
+https://paul-souvik-portfolio.vercel.app/
 
 
 ## 🚀 Overview

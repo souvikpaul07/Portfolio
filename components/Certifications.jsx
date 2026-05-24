@@ -45,7 +45,7 @@ export default function Certifications() {
           <div className="p-6 rounded-xl border border-border bg-gradient-to-br from-blue-500/10 to-transparent flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <h3 className="font-semibold text-foreground mb-1">
-                Microsoft Certified Trainer
+                
               </h3>
               <p className="text-sm text-muted">
                 Credentials showcasing expertise in Java, AI tools and modern development workflows.
