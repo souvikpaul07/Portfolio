@@ -13,7 +13,7 @@ export const site = {
     "https://drive.google.com/file/d/1iAAGWUwNb7Y-o89osyeI1mMhBej8AxsK/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/paul-souvik/",
   github: "https://github.com/souvikpaul07",
-  // learnProfile: "https://learn.microsoft.com/en-us/users/Akash-Jadav",
+  // learnProfile: "https://learn.microsoft.com/en-us/users/",
 };
 
 export const navLinks = [
@@ -175,18 +175,21 @@ export const proficiencies = [
 
 export const experience = [
   {
-  title: "Full-Stack Developer",
-  company: "US Bank (via Wipro)",
-  type: "Contract",
-  period: "2025 - Present",
-  highlights: [
-    "Led remediation of container security vulnerabilities across multiple services, improving overall application security posture and compliance",
-    "Designed and optimized Dockerfiles for Java-based microservices, enabling efficient containerization and faster deployment cycles",
-    "Managed application redeployments across environments, ensuring high availability and minimal downtime during releases",
-    "Developed and enhanced backend services using Java and Spring Boot, contributing to scalable and maintainable enterprise systems",
-    "Collaborated with cross-functional teams to identify performance bottlenecks and implement improvements in deployment workflows",
-    "Strengthened CI/CD processes by integrating container best practices and improving build reliability"
-  ],
+    title: "Full-Stack Developer",
+    company: "US Bank (via Wipro)",
+    type: "Contract",
+    period: "2025 - Present",
+    highlights: [
+      "Worked on Java Spring Boot applications in an enterprise banking environment",
+      "Resolved security vulnerabilities identified through Fortify and Black Duck scans",
+      "Handled application deployments and redeployments using Jenkins pipelines",
+      "Used GitLab CI/CD for deployment workflows and version control management",
+      "Developed and maintained backend APIs using Java and Spring Boot",
+      "Worked with Docker for containerizing Java applications and managing deployments",
+      "Collaborated with development, DevOps, and security teams to improve deployment processes",
+      "Participated in debugging, issue fixing, and production support activities",
+      "Contributed to improving application stability and deployment reliability"
+    ],
   tech: ["Java", "Spring Boot", "Docker", "Microservices", "CI/CD", "Linux", "Git", "GitLabs","Jenkins","Fortify","Postman","BlackDuck",]
 },
 ];
