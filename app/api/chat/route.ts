@@ -1,5 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+interface Message {
+  role: 'user' | 'assistant';
+  content: string;
+}
+
 const GEMINI_API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
 const GEMINI_MODEL = 'gemini-3.5-flash';
 
@@ -175,7 +180,7 @@ IMPORTANT:
         role: 'model',
         parts: [{ text: 'I understand. I will answer ONLY based on the provided portfolio information and avoid making assumptions or adding information from general knowledge.' }],
       },
-      ...messages.map((msg: any) => ({
+      ...messages.map((msg: Message) => ({
         role: msg.role === 'user' ? 'user' : 'model',
         parts: [{ text: msg.content }],
       })),

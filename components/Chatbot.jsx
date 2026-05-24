@@ -7,9 +7,6 @@ import ReactMarkdown from 'react-markdown';
 
 // Premium AI Bot Logo Component
 function PremiumAIBotLogo({ isOpen, isLoading }) {
-  const { theme } = useTheme();
-  const isDark = theme === 'dark';
-
   return (
     <svg
       viewBox="0 0 120 140"
@@ -207,6 +204,8 @@ export default function Chatbot() {
 
   useEffect(() => {
     setMounted(true);
+    return undefined;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -351,7 +350,7 @@ export default function Chatbot() {
               }`}
             >
               <div>
-                <h3 className="font-semibold text-lg">Hello user, I'm Comet</h3>
+                <h3 className="font-semibold text-lg">Hello user, I&apos;m Comet</h3>
                 {/* <p className="text-sm opacity-90">Ask me anything!</p> */}
               </div>
               <button
@@ -405,16 +404,16 @@ export default function Chatbot() {
                       <div className="text-sm prose prose-sm dark:prose-invert max-w-none">
                         <ReactMarkdown
                           components={{
-                            h1: ({ node, ...props }) => <h1 className="text-lg font-bold mt-2 mb-1" {...props} />,
-                            h2: ({ node, ...props }) => <h2 className="text-base font-bold mt-2 mb-1" {...props} />,
-                            h3: ({ node, ...props }) => <h3 className="text-sm font-bold mt-1 mb-0.5" {...props} />,
-                            strong: ({ node, ...props }) => <strong className="font-bold" {...props} />,
-                            em: ({ node, ...props }) => <em className="italic" {...props} />,
-                            ul: ({ node, ...props }) => <ul className="list-disc list-inside ml-2" {...props} />,
-                            ol: ({ node, ...props }) => <ol className="list-decimal list-inside ml-2" {...props} />,
-                            li: ({ node, ...props }) => <li className="mb-0.5" {...props} />,
-                            code: ({ node, ...props }) => <code className="bg-gray-200 dark:bg-gray-700 px-1 py-0.5 rounded text-xs" {...props} />,
-                            blockquote: ({ node, ...props }) => <blockquote className="border-l-4 border-purple-500 pl-3 italic" {...props} />,
+                            h1: ({ _node, ...props }) => <h1 className="text-lg font-bold mt-2 mb-1" {...props} />,
+                            h2: ({ _node, ...props }) => <h2 className="text-base font-bold mt-2 mb-1" {...props} />,
+                            h3: ({ _node, ...props }) => <h3 className="text-sm font-bold mt-1 mb-0.5" {...props} />,
+                            strong: ({ _node, ...props }) => <strong className="font-bold" {...props} />,
+                            em: ({ _node, ...props }) => <em className="italic" {...props} />,
+                            ul: ({ _node, ...props }) => <ul className="list-disc list-inside ml-2" {...props} />,
+                            ol: ({ _node, ...props }) => <ol className="list-decimal list-inside ml-2" {...props} />,
+                            li: ({ _node, ...props }) => <li className="mb-0.5" {...props} />,
+                            code: ({ _node, ...props }) => <code className="bg-gray-200 dark:bg-gray-700 px-1 py-0.5 rounded text-xs" {...props} />,
+                            blockquote: ({ _node, ...props }) => <blockquote className="border-l-4 border-purple-500 pl-3 italic" {...props} />,
                           }}
                         >
                           {message.content}
