@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect, useLayoutEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import ReactMarkdown from 'react-markdown';
@@ -202,7 +202,9 @@ export default function Chatbot() {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  useLayoutEffect(() => {
+// Hydration pattern for Next.js
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
   }, []);
 
